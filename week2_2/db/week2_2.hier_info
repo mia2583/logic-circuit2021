@@ -1,0 +1,28 @@
+|week2_2
+b3 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+d0 => inst6.IN0
+d8 => inst2.IN0
+d10 => inst2.IN1
+d10 => inst5.IN4
+d11 => inst2.IN2
+d11 => inst5.IN5
+d11 => inst.IN5
+d9 => inst2.IN3
+d9 => inst.IN4
+b2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+d4 => inst3.IN0
+d6 => inst3.IN1
+d6 => inst5.IN1
+d7 => inst3.IN2
+d7 => inst5.IN3
+d7 => inst.IN3
+d5 => inst3.IN3
+d5 => inst.IN1
+b1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+d2 => inst5.IN0
+d3 => inst5.IN2
+d3 => inst.IN2
+b0 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+d1 => inst.IN0
+
+

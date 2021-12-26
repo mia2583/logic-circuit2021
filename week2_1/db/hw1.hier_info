@@ -1,0 +1,14 @@
+|hw1
+F1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst6.IN0
+A => inst2.IN1
+A => inst4.IN1
+A => inst5.IN1
+C => inst.IN0
+C => inst6.IN1
+D => inst.IN1
+D => inst6.IN2
+F2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
