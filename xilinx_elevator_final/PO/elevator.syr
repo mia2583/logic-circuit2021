@@ -1,0 +1,1016 @@
+Release 14.7 - xst P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: elevator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "elevator.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "elevator"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-fgg484
+
+---- Source Options
+Top Module Name                    : elevator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/xilinx_project/mx_2x1.v" into library work
+Parsing module <mx_2x1>.
+Analyzing Verilog file "/home/ise/xilinx_project/fourSecond.v" into library work
+Parsing module <fourSecond>.
+Analyzing Verilog file "/home/ise/xilinx_project/countFour.v" into library work
+Parsing module <countFour>.
+Analyzing Verilog file "/home/ise/xilinx_project/trigger.v" into library work
+Parsing module <trigger>.
+Analyzing Verilog file "/home/ise/xilinx_project/timer.v" into library work
+Parsing module <timer>.
+Analyzing Verilog file "/home/ise/xilinx_project/stop.v" into library work
+Parsing module <stop>.
+Analyzing Verilog file "/home/ise/xilinx_project/mx_4bit_2x1.v" into library work
+Parsing module <mx_4bit_2x1>.
+Analyzing Verilog file "/home/ise/xilinx_project/four_bit_reg_ce.v" into library work
+Parsing module <four_bit_reg_ce>.
+Analyzing Verilog file "/home/ise/xilinx_project/FA.v" into library work
+Parsing module <FA>.
+Analyzing Verilog file "/home/ise/xilinx_project/Decimal_to_binary.v" into library work
+Parsing module <Decimal_to_binary>.
+Analyzing Verilog file "/home/ise/xilinx_project/count_4.v" into library work
+Parsing module <count_4>.
+Analyzing Verilog file "/home/ise/xilinx_project/clk_div.v" into library work
+Parsing module <clk_div>.
+Analyzing Verilog file "/home/ise/xilinx_project/sub.v" into library work
+Parsing module <sub>.
+Analyzing Verilog file "/home/ise/xilinx_project/sound.v" into library work
+Parsing module <sound>.
+Analyzing Verilog file "/home/ise/xilinx_project/moving.v" into library work
+Parsing module <moving>.
+Analyzing Verilog file "/home/ise/xilinx_project/motorMove.v" into library work
+Parsing module <motorMove>.
+Analyzing Verilog file "/home/ise/xilinx_project/Led.v" into library work
+Parsing module <Led>.
+Analyzing Verilog file "/home/ise/xilinx_project/keypad.v" into library work
+Parsing module <keypad>.
+Analyzing Verilog file "/home/ise/xilinx_project/canMove2.v" into library work
+Parsing module <canMove2>.
+Analyzing Verilog file "/home/ise/xilinx_project/b2seg_bus.v" into library work
+Parsing module <b2seg_bus>.
+Analyzing Verilog file "/home/ise/xilinx_project/elevator.v" into library work
+Parsing module <elevator>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "/home/ise/xilinx_project/elevator.v" Line 106: Port count is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/ise/xilinx_project/elevator.v" Line 213: Port sign is not connected to this instance
+
+Elaborating module <elevator>.
+
+Elaborating module <canMove2>.
+
+Elaborating module <clk_div(cnt_num=1000)>.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_project/clk_div.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <timer>.
+
+Elaborating module <countFour>.
+
+Elaborating module <fourSecond>.
+
+Elaborating module <keypad>.
+
+Elaborating module <four_bit_reg_ce>.
+
+Elaborating module <mx_2x1>.
+
+Elaborating module <trigger>.
+
+Elaborating module <Decimal_to_binary>.
+
+Elaborating module <Led>.
+
+Elaborating module <motorMove>.
+
+Elaborating module <clk_div(cnt_num=100)>.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_project/clk_div.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <count_4>.
+
+Elaborating module <b2seg_bus>.
+WARNING:HDLCompiler:1016 - "/home/ise/xilinx_project/sub.v" Line 95: Port Cout is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/ise/xilinx_project/sub.v" Line 153: Port Cout is not connected to this instance
+
+Elaborating module <sub>.
+
+Elaborating module <FA>.
+
+Elaborating module <mx_4bit_2x1>.
+
+Elaborating module <sound>.
+
+Elaborating module <clk_div(cnt_num=2)>.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_project/clk_div.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <moving>.
+
+Elaborating module <stop(state1=0,state2=1,state3=2,state4=3,state5=8,state6=4,state7=5,state8=6,state9=7)>.
+"/home/ise/xilinx_project/stop.v" Line 155. $display Reach undefined state
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <elevator>.
+    Related source file is "/home/ise/xilinx_project/elevator.v".
+INFO:Xst:3210 - "/home/ise/xilinx_project/elevator.v" line 106: Output port <count> of the instance <b2v_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_project/elevator.v" line 213: Output port <sign> of the instance <b2v_inst8> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <elevator> synthesized.
+
+Synthesizing Unit <canMove2>.
+    Related source file is "/home/ise/xilinx_project/canMove2.v".
+    Found 1-bit register for signal <DFF_inst15>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <canMove2> synthesized.
+
+Synthesizing Unit <clk_div_1>.
+    Related source file is "/home/ise/xilinx_project/clk_div.v".
+        cnt_num = 1000
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_3_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_3_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_3_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <clk_div_1> synthesized.
+
+Synthesizing Unit <timer>.
+    Related source file is "/home/ise/xilinx_project/timer.v".
+    Summary:
+	no macro.
+Unit <timer> synthesized.
+
+Synthesizing Unit <countFour>.
+    Related source file is "/home/ise/xilinx_project/countFour.v".
+    Found 1-bit register for signal <CNT_ALTERA_SYNTHESIZED5<1>>.
+    Found 1-bit register for signal <CNT_ALTERA_SYNTHESIZED5<0>>.
+    Found 1-bit register for signal <CNT_ALTERA_SYNTHESIZED5<2>>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <countFour> synthesized.
+
+Synthesizing Unit <fourSecond>.
+    Related source file is "/home/ise/xilinx_project/fourSecond.v".
+    Summary:
+	no macro.
+Unit <fourSecond> synthesized.
+
+Synthesizing Unit <keypad>.
+    Related source file is "/home/ise/xilinx_project/keypad.v".
+    Summary:
+	no macro.
+Unit <keypad> synthesized.
+
+Synthesizing Unit <four_bit_reg_ce>.
+    Related source file is "/home/ise/xilinx_project/four_bit_reg_ce.v".
+    Found 1-bit register for signal <reg_out<1>>.
+    Found 1-bit register for signal <reg_out<2>>.
+    Found 1-bit register for signal <reg_out<3>>.
+    Found 1-bit register for signal <reg_out<0>>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <four_bit_reg_ce> synthesized.
+
+Synthesizing Unit <mx_2x1>.
+    Related source file is "/home/ise/xilinx_project/mx_2x1.v".
+    Summary:
+	no macro.
+Unit <mx_2x1> synthesized.
+
+Synthesizing Unit <trigger>.
+    Related source file is "/home/ise/xilinx_project/trigger.v".
+    Found 1-bit register for signal <DFF_inst3>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_1>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <trigger> synthesized.
+
+Synthesizing Unit <Decimal_to_binary>.
+    Related source file is "/home/ise/xilinx_project/Decimal_to_binary.v".
+    Summary:
+	no macro.
+Unit <Decimal_to_binary> synthesized.
+
+Synthesizing Unit <Led>.
+    Related source file is "/home/ise/xilinx_project/Led.v".
+    Summary:
+	no macro.
+Unit <Led> synthesized.
+
+Synthesizing Unit <motorMove>.
+    Related source file is "/home/ise/xilinx_project/motorMove.v".
+    Summary:
+Unit <motorMove> synthesized.
+
+Synthesizing Unit <clk_div_2>.
+    Related source file is "/home/ise/xilinx_project/clk_div.v".
+        cnt_num = 100
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_14_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_14_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_14_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <clk_div_2> synthesized.
+
+Synthesizing Unit <count_4>.
+    Related source file is "/home/ise/xilinx_project/count_4.v".
+    Found 1-bit register for signal <result>.
+    Found 1-bit register for signal <DFF_inst>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <count_4> synthesized.
+
+Synthesizing Unit <b2seg_bus>.
+    Related source file is "/home/ise/xilinx_project/b2seg_bus.v".
+    Summary:
+	no macro.
+Unit <b2seg_bus> synthesized.
+
+Synthesizing Unit <sub>.
+    Related source file is "/home/ise/xilinx_project/sub.v".
+INFO:Xst:3210 - "/home/ise/xilinx_project/sub.v" line 95: Output port <Cout> of the instance <b2v_inst21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_project/sub.v" line 153: Output port <Cout> of the instance <b2v_inst8> is unconnected or connected to loadless signal.
+    Summary:
+Unit <sub> synthesized.
+
+Synthesizing Unit <FA>.
+    Related source file is "/home/ise/xilinx_project/FA.v".
+    Summary:
+Unit <FA> synthesized.
+
+Synthesizing Unit <mx_4bit_2x1>.
+    Related source file is "/home/ise/xilinx_project/mx_4bit_2x1.v".
+    Summary:
+	no macro.
+Unit <mx_4bit_2x1> synthesized.
+
+Synthesizing Unit <sound>.
+    Related source file is "/home/ise/xilinx_project/sound.v".
+    Summary:
+	no macro.
+Unit <sound> synthesized.
+
+Synthesizing Unit <clk_div_3>.
+    Related source file is "/home/ise/xilinx_project/clk_div.v".
+        cnt_num = 2
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_21_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_21_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <clk_div_3> synthesized.
+
+Synthesizing Unit <moving>.
+    Related source file is "/home/ise/xilinx_project/moving.v".
+    Summary:
+	no macro.
+Unit <moving> synthesized.
+
+Synthesizing Unit <stop>.
+    Related source file is "/home/ise/xilinx_project/stop.v".
+        state1 = 0
+        state2 = 1
+        state3 = 2
+        state4 = 3
+        state6 = 4
+        state7 = 5
+        state8 = 6
+        state9 = 7
+        state5 = 8
+WARNING:Xst:37 - Detected unknown constraint/property "message_off". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "message_off". This constraint/property is not supported by the current software release and will be ignored.
+    Found 9-bit register for signal <fstate>.
+    Found 16x4-bit Read Only RAM for signal <fstate[8]_GND_23_o_select_65_OUT>
+    Found 9-bit 9-to-1 multiplexer for signal <_n0092> created at line 53.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_fstate<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_fstate<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_fstate<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_fstate<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_fstate<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_fstate<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_fstate<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_fstate<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_fstate<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   9 Latch(s).
+	inferred  10 Multiplexer(s).
+Unit <stop> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x4-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 4
+ 20-bit adder                                          : 4
+# Registers                                            : 33
+ 1-bit register                                        : 28
+ 20-bit register                                       : 4
+ 9-bit register                                        : 1
+# Latches                                              : 9
+ 1-bit latch                                           : 9
+# Comparators                                          : 7
+ 20-bit comparator greater                             : 4
+ 20-bit comparator lessequal                           : 3
+# Multiplexers                                         : 17
+ 20-bit 2-to-1 multiplexer                             : 7
+ 4-bit 2-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 8
+ 9-bit 9-to-1 multiplexer                              : 1
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <clk_div_2>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <clk_div_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <stop>.
+INFO:Xst:3231 - The small RAM <Mram_fstate[8]_GND_23_o_select_65_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <fstate<3:0>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <stop> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x4-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 3
+ 20-bit adder                                          : 3
+# Counters                                             : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 97
+ Flip-Flops                                            : 97
+# Comparators                                          : 7
+ 20-bit comparator greater                             : 4
+ 20-bit comparator lessequal                           : 3
+# Multiplexers                                         : 16
+ 20-bit 2-to-1 multiplexer                             : 6
+ 4-bit 2-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 8
+ 9-bit 9-to-1 multiplexer                              : 1
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <reg_fstate_6> (without init value) has a constant value of 0 in block <stop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_fstate_7> (without init value) has a constant value of 0 in block <stop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_fstate_5> (without init value) has a constant value of 0 in block <stop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_fstate_4> (without init value) has a constant value of 0 in block <stop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_fstate_8> (without init value) has a constant value of 0 in block <stop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fstate_4> (without init value) has a constant value of 0 in block <stop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fstate_5> (without init value) has a constant value of 0 in block <stop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fstate_6> (without init value) has a constant value of 0 in block <stop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fstate_7> (without init value) has a constant value of 0 in block <stop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fstate_8> (without init value) has a constant value of 0 in block <stop>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <elevator> ...
+
+Optimizing unit <keypad> ...
+
+Optimizing unit <four_bit_reg_ce> ...
+
+Optimizing unit <clk_div_1> ...
+
+Optimizing unit <motorMove> ...
+
+Optimizing unit <clk_div_3> ...
+
+Optimizing unit <sub> ...
+
+Optimizing unit <stop> ...
+WARNING:Xst:1710 - FF/Latch <b2v_inst17/b2v_inst12/cnt_13> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_12> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_11> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_10> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_9> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_8> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_7> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_19> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_18> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_17> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_16> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_15> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_14> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_13> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_12> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_11> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_10> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_9> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_8> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_7> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_6> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_5> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_4> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_3> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_2> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst20/b2v_inst/cnt_1> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst/b2v_inst3/cnt_19> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst/b2v_inst3/cnt_18> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst/b2v_inst3/cnt_17> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst/b2v_inst3/cnt_16> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst/b2v_inst3/cnt_15> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst/b2v_inst3/cnt_14> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst/b2v_inst3/cnt_13> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst/b2v_inst3/cnt_12> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst/b2v_inst3/cnt_11> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst/b2v_inst3/cnt_10> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst10/cnt_19> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst10/cnt_18> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst10/cnt_17> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst10/cnt_16> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst10/cnt_15> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst10/cnt_14> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst10/cnt_13> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst10/cnt_12> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst10/cnt_11> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst10/cnt_10> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_19> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_18> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_17> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_16> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_15> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst17/b2v_inst12/cnt_14> (without init value) has a constant value of 0 in block <elevator>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <b2v_inst/b2v_inst3/cnt_0> in Unit <elevator> is equivalent to the following 2 FFs/Latches, which will be removed : <b2v_inst10/cnt_0> <b2v_inst17/b2v_inst12/cnt_0> 
+INFO:Xst:2261 - The FF/Latch <b2v_inst/b2v_inst3/cnt_1> in Unit <elevator> is equivalent to the following 2 FFs/Latches, which will be removed : <b2v_inst10/cnt_1> <b2v_inst17/b2v_inst12/cnt_1> 
+INFO:Xst:2261 - The FF/Latch <b2v_inst/b2v_inst3/cnt_2> in Unit <elevator> is equivalent to the following FF/Latch, which will be removed : <b2v_inst10/cnt_2> 
+INFO:Xst:2261 - The FF/Latch <b2v_inst/b2v_inst3/cnt_3> in Unit <elevator> is equivalent to the following FF/Latch, which will be removed : <b2v_inst10/cnt_3> 
+INFO:Xst:2261 - The FF/Latch <b2v_inst/b2v_inst3/cnt_4> in Unit <elevator> is equivalent to the following FF/Latch, which will be removed : <b2v_inst10/cnt_4> 
+INFO:Xst:2261 - The FF/Latch <b2v_inst/b2v_inst3/cnt_5> in Unit <elevator> is equivalent to the following FF/Latch, which will be removed : <b2v_inst10/cnt_5> 
+INFO:Xst:2261 - The FF/Latch <b2v_inst/b2v_inst3/cnt_6> in Unit <elevator> is equivalent to the following FF/Latch, which will be removed : <b2v_inst10/cnt_6> 
+INFO:Xst:2261 - The FF/Latch <b2v_inst/b2v_inst3/cnt_7> in Unit <elevator> is equivalent to the following FF/Latch, which will be removed : <b2v_inst10/cnt_7> 
+INFO:Xst:2261 - The FF/Latch <b2v_inst/b2v_inst3/cnt_8> in Unit <elevator> is equivalent to the following FF/Latch, which will be removed : <b2v_inst10/cnt_8> 
+INFO:Xst:2261 - The FF/Latch <b2v_inst/b2v_inst3/cnt_9> in Unit <elevator> is equivalent to the following FF/Latch, which will be removed : <b2v_inst10/cnt_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <b2v_inst/b2v_inst3/buff> in Unit <elevator> is equivalent to the following FF/Latch, which will be removed : <b2v_inst10/buff> 
+Found area constraint ratio of 100 (+ 5) on block elevator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 47
+ Flip-Flops                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : elevator.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 134
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 9
+#      LUT2                        : 9
+#      LUT3                        : 8
+#      LUT4                        : 23
+#      LUT5                        : 7
+#      LUT6                        : 42
+#      MUXCY                       : 15
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 51
+#      FDC                         : 43
+#      FDE                         : 4
+#      LDC                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 35
+#      IBUF                        : 13
+#      OBUF                        : 22
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45fgg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              51  out of  54576     0%  
+ Number of Slice LUTs:                  101  out of  27288     0%  
+    Number used as Logic:               101  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    108
+   Number with an unused Flip Flop:      57  out of    108    52%  
+   Number with an unused LUT:             7  out of    108     6%  
+   Number of fully used LUT-FF pairs:    44  out of    108    40%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          36
+ Number of bonded IOBs:                  36  out of    316    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------+------------------------------------------------------------+-------+
+Clock Signal                                          | Clock buffer(FF name)                                      | Load  |
+------------------------------------------------------+------------------------------------------------------------+-------+
+clk                                                   | BUFGP                                                      | 38    |
+b2v_inst/b2v_inst3/buff                               | NONE(b2v_inst/b2v_inst4/b2v_inst/CNT_ALTERA_SYNTHESIZED5_0)| 7     |
+b2v_inst17/b2v_inst12/buff                            | NONE(b2v_inst17/b2v_inst51/result_0)                       | 2     |
+b2v_inst5/b2v_inst4/_n0115(b2v_inst5/b2v_inst4/out1:O)| NONE(*)(b2v_inst5/b2v_inst4/reg_fstate_1)                  | 4     |
+------------------------------------------------------+------------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.774ns (Maximum Frequency: 264.960MHz)
+   Minimum input arrival time before clock: 8.963ns
+   Maximum output required time after clock: 9.855ns
+   Maximum combinational path delay: 11.187ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.774ns (frequency: 264.960MHz)
+  Total number of paths / destination ports: 434 / 36
+-------------------------------------------------------------------------
+Delay:               3.774ns (Levels of Logic = 3)
+  Source:            b2v_inst14/b2v_inst2/reg_out_0 (FF)
+  Destination:       b2v_inst14/b2v_inst6/SYNTHESIZED_WIRE_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: b2v_inst14/b2v_inst2/reg_out_0 to b2v_inst14/b2v_inst6/SYNTHESIZED_WIRE_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.447   0.987  b2v_inst14/b2v_inst2/reg_out_0 (b2v_inst14/b2v_inst2/reg_out_0)
+     LUT6:I4->O            5   0.203   0.943  b2v_inst8/b2v_inst3/Cout1 (b2v_inst8/SYNTHESIZED_WIRE_1)
+     LUT4:I1->O            1   0.205   0.684  SYNTHESIZED_WIRE_30<0>5_SW3 (N24)
+     LUT6:I4->O            1   0.203   0.000  b2v_inst14/SYNTHESIZED_WIRE_71 (b2v_inst14/SYNTHESIZED_WIRE_7)
+     FDC:D                     0.102          b2v_inst14/b2v_inst6/SYNTHESIZED_WIRE_1
+    ----------------------------------------
+    Total                      3.774ns (1.160ns logic, 2.614ns route)
+                                       (30.7% logic, 69.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'b2v_inst/b2v_inst3/buff'
+  Clock period: 1.633ns (frequency: 612.276MHz)
+  Total number of paths / destination ports: 7 / 3
+-------------------------------------------------------------------------
+Delay:               1.633ns (Levels of Logic = 1)
+  Source:            b2v_inst/b2v_inst4/b2v_inst/CNT_ALTERA_SYNTHESIZED5_1 (FF)
+  Destination:       b2v_inst/b2v_inst4/b2v_inst/CNT_ALTERA_SYNTHESIZED5_2 (FF)
+  Source Clock:      b2v_inst/b2v_inst3/buff rising
+  Destination Clock: b2v_inst/b2v_inst3/buff rising
+
+  Data Path: b2v_inst/b2v_inst4/b2v_inst/CNT_ALTERA_SYNTHESIZED5_1 to b2v_inst/b2v_inst4/b2v_inst/CNT_ALTERA_SYNTHESIZED5_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.447   0.879  b2v_inst/b2v_inst4/b2v_inst/CNT_ALTERA_SYNTHESIZED5_1 (b2v_inst/b2v_inst4/b2v_inst/CNT_ALTERA_SYNTHESIZED5_1)
+     LUT3:I0->O            1   0.205   0.000  b2v_inst/b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_01 (b2v_inst/b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_0)
+     FDC:D                     0.102          b2v_inst/b2v_inst4/b2v_inst/CNT_ALTERA_SYNTHESIZED5_2
+    ----------------------------------------
+    Total                      1.633ns (0.754ns logic, 0.879ns route)
+                                       (46.2% logic, 53.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'b2v_inst17/b2v_inst12/buff'
+  Clock period: 2.078ns (frequency: 481.325MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.078ns (Levels of Logic = 1)
+  Source:            b2v_inst17/b2v_inst51/result_0 (FF)
+  Destination:       b2v_inst17/b2v_inst51/result_0 (FF)
+  Source Clock:      b2v_inst17/b2v_inst12/buff rising
+  Destination Clock: b2v_inst17/b2v_inst12/buff rising
+
+  Data Path: b2v_inst17/b2v_inst51/result_0 to b2v_inst17/b2v_inst51/result_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.744  b2v_inst17/b2v_inst51/result_0 (b2v_inst17/b2v_inst51/result_0)
+     INV:I->O              1   0.206   0.579  b2v_inst17/b2v_inst51/SYNTHESIZED_WIRE_11_INV_0 (b2v_inst17/b2v_inst51/SYNTHESIZED_WIRE_1)
+     FDC:D                     0.102          b2v_inst17/b2v_inst51/result_0
+    ----------------------------------------
+    Total                      2.078ns (0.755ns logic, 1.323ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 115 / 46
+-------------------------------------------------------------------------
+Offset:              6.773ns (Levels of Logic = 5)
+  Source:            rst (PAD)
+  Destination:       b2v_inst14/b2v_inst6/SYNTHESIZED_WIRE_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to b2v_inst14/b2v_inst6/SYNTHESIZED_WIRE_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            53   1.222   1.815  rst_IBUF (b2v_inst/b2v_inst3/rst_n_inv)
+     LUT4:I0->O            9   0.203   1.194  b2v_inst5/b2v_inst4/Mmux_nextFloor11 (SYNTHESIZED_WIRE_33<0>)
+     LUT6:I0->O            5   0.203   0.943  b2v_inst8/b2v_inst3/Cout1 (b2v_inst8/SYNTHESIZED_WIRE_1)
+     LUT4:I1->O            1   0.205   0.684  SYNTHESIZED_WIRE_30<0>5_SW3 (N24)
+     LUT6:I4->O            1   0.203   0.000  b2v_inst14/SYNTHESIZED_WIRE_71 (b2v_inst14/SYNTHESIZED_WIRE_7)
+     FDC:D                     0.102          b2v_inst14/b2v_inst6/SYNTHESIZED_WIRE_1
+    ----------------------------------------
+    Total                      6.773ns (2.138ns logic, 4.635ns route)
+                                       (31.6% logic, 68.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b2v_inst/b2v_inst3/buff'
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Offset:              4.177ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       b2v_inst/b2v_inst4/b2v_inst/CNT_ALTERA_SYNTHESIZED5_0 (FF)
+  Destination Clock: b2v_inst/b2v_inst3/buff rising
+
+  Data Path: rst to b2v_inst/b2v_inst4/b2v_inst/CNT_ALTERA_SYNTHESIZED5_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            53   1.222   1.672  rst_IBUF (b2v_inst/b2v_inst3/rst_n_inv)
+     LUT4:I2->O            3   0.203   0.650  b2v_inst/b2v_inst4/b2v_inst/rst_inv1 (b2v_inst/b2v_inst4/b2v_inst/rst_inv)
+     FDC:CLR                   0.430          b2v_inst/b2v_inst4/b2v_inst/CNT_ALTERA_SYNTHESIZED5_2
+    ----------------------------------------
+    Total                      4.177ns (1.855ns logic, 2.322ns route)
+                                       (44.4% logic, 55.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b2v_inst17/b2v_inst12/buff'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.219ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       b2v_inst17/b2v_inst51/result_0 (FF)
+  Destination Clock: b2v_inst17/b2v_inst12/buff rising
+
+  Data Path: rst to b2v_inst17/b2v_inst51/result_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            53   1.222   1.567  rst_IBUF (b2v_inst/b2v_inst3/rst_n_inv)
+     FDC:CLR                   0.430          b2v_inst17/b2v_inst51/result_0
+    ----------------------------------------
+    Total                      3.219ns (1.652ns logic, 1.567ns route)
+                                       (51.3% logic, 48.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b2v_inst5/b2v_inst4/_n0115'
+  Total number of paths / destination ports: 76 / 8
+-------------------------------------------------------------------------
+Offset:              8.963ns (Levels of Logic = 7)
+  Source:            rst (PAD)
+  Destination:       b2v_inst5/b2v_inst4/reg_fstate_0 (LATCH)
+  Destination Clock: b2v_inst5/b2v_inst4/_n0115 falling
+
+  Data Path: rst to b2v_inst5/b2v_inst4/reg_fstate_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            53   1.222   1.815  rst_IBUF (b2v_inst/b2v_inst3/rst_n_inv)
+     LUT4:I0->O            9   0.203   1.194  b2v_inst5/b2v_inst4/Mmux_nextFloor11 (SYNTHESIZED_WIRE_33<0>)
+     LUT6:I0->O            5   0.203   0.715  b2v_inst8/b2v_inst3/Cout1 (b2v_inst8/SYNTHESIZED_WIRE_1)
+     LUT6:I5->O            3   0.205   0.879  b2v_inst8/b2v_inst/Cout1 (b2v_inst8/SYNTHESIZED_WIRE_29)
+     LUT6:I3->O            9   0.205   0.830  SYNTHESIZED_WIRE_30<0>5 (SYNTHESIZED_WIRE_30)
+     LUT6:I5->O            4   0.205   1.048  SYNTHESIZED_WIRE_213 (SYNTHESIZED_WIRE_21)
+     LUT6:I0->O            1   0.203   0.000  b2v_inst5/b2v_inst4/_n0092<9>1 (b2v_inst5/b2v_inst4/_n0092<9>)
+     LDC:D                     0.037          b2v_inst5/b2v_inst4/reg_fstate_0
+    ----------------------------------------
+    Total                      8.963ns (2.483ns logic, 6.480ns route)
+                                       (27.7% logic, 72.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 254 / 15
+-------------------------------------------------------------------------
+Offset:              8.188ns (Levels of Logic = 5)
+  Source:            b2v_inst14/b2v_inst2/reg_out_0 (FF)
+  Destination:       motor_a (PAD)
+  Source Clock:      clk rising
+
+  Data Path: b2v_inst14/b2v_inst2/reg_out_0 to motor_a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.447   0.987  b2v_inst14/b2v_inst2/reg_out_0 (b2v_inst14/b2v_inst2/reg_out_0)
+     LUT6:I4->O            5   0.203   0.715  b2v_inst8/b2v_inst3/Cout1 (b2v_inst8/SYNTHESIZED_WIRE_1)
+     LUT6:I5->O            3   0.205   0.879  b2v_inst8/b2v_inst/Cout1 (b2v_inst8/SYNTHESIZED_WIRE_29)
+     LUT6:I3->O            9   0.205   1.194  SYNTHESIZED_WIRE_30<0>5 (SYNTHESIZED_WIRE_30)
+     LUT6:I0->O            1   0.203   0.579  b2v_inst17/Motor_B1 (motor_b_OBUF)
+     OBUF:I->O                 2.571          motor_b_OBUF (motor_b)
+    ----------------------------------------
+    Total                      8.188ns (3.834ns logic, 4.354ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'b2v_inst/b2v_inst3/buff'
+  Total number of paths / destination ports: 827 / 20
+-------------------------------------------------------------------------
+Offset:              9.855ns (Levels of Logic = 6)
+  Source:            b2v_inst5/b2v_inst4/fstate_3 (FF)
+  Destination:       motor_a (PAD)
+  Source Clock:      b2v_inst/b2v_inst3/buff rising
+
+  Data Path: b2v_inst5/b2v_inst4/fstate_3 to motor_a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             13   0.447   1.277  b2v_inst5/b2v_inst4/fstate_3 (b2v_inst5/b2v_inst4/fstate_3)
+     LUT5:I0->O            9   0.203   1.174  b2v_inst5/b2v_inst4/Mmux_nextFloor21 (SYNTHESIZED_WIRE_33<1>)
+     LUT6:I1->O            5   0.203   0.715  b2v_inst8/b2v_inst3/Cout1 (b2v_inst8/SYNTHESIZED_WIRE_1)
+     LUT6:I5->O            3   0.205   0.879  b2v_inst8/b2v_inst/Cout1 (b2v_inst8/SYNTHESIZED_WIRE_29)
+     LUT6:I3->O            9   0.205   1.194  SYNTHESIZED_WIRE_30<0>5 (SYNTHESIZED_WIRE_30)
+     LUT6:I0->O            1   0.203   0.579  b2v_inst17/Motor_B1 (motor_b_OBUF)
+     OBUF:I->O                 2.571          motor_b_OBUF (motor_b)
+    ----------------------------------------
+    Total                      9.855ns (4.037ns logic, 5.818ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'b2v_inst17/b2v_inst12/buff'
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Offset:              4.889ns (Levels of Logic = 2)
+  Source:            b2v_inst17/b2v_inst51/result_0 (FF)
+  Destination:       motor_a (PAD)
+  Source Clock:      b2v_inst17/b2v_inst12/buff rising
+
+  Data Path: b2v_inst17/b2v_inst51/result_0 to motor_a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   1.089  b2v_inst17/b2v_inst51/result_0 (b2v_inst17/b2v_inst51/result_0)
+     LUT6:I1->O            1   0.203   0.579  b2v_inst17/Motor_B1 (motor_b_OBUF)
+     OBUF:I->O                 2.571          motor_b_OBUF (motor_b)
+    ----------------------------------------
+    Total                      4.889ns (3.221ns logic, 1.668ns route)
+                                       (65.9% logic, 34.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 236 / 20
+-------------------------------------------------------------------------
+Delay:               11.187ns (Levels of Logic = 7)
+  Source:            rst (PAD)
+  Destination:       motor_a (PAD)
+
+  Data Path: rst to motor_a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            53   1.222   1.815  rst_IBUF (b2v_inst/b2v_inst3/rst_n_inv)
+     LUT4:I0->O            9   0.203   1.194  b2v_inst5/b2v_inst4/Mmux_nextFloor11 (SYNTHESIZED_WIRE_33<0>)
+     LUT6:I0->O            5   0.203   0.715  b2v_inst8/b2v_inst3/Cout1 (b2v_inst8/SYNTHESIZED_WIRE_1)
+     LUT6:I5->O            3   0.205   0.879  b2v_inst8/b2v_inst/Cout1 (b2v_inst8/SYNTHESIZED_WIRE_29)
+     LUT6:I3->O            9   0.205   1.194  SYNTHESIZED_WIRE_30<0>5 (SYNTHESIZED_WIRE_30)
+     LUT6:I0->O            1   0.203   0.579  b2v_inst17/Motor_B1 (motor_b_OBUF)
+     OBUF:I->O                 2.571          motor_b_OBUF (motor_b)
+    ----------------------------------------
+    Total                     11.187ns (4.812ns logic, 6.375ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock b2v_inst/b2v_inst3/buff
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+b2v_inst/b2v_inst3/buff   |    1.633|         |         |         |
+b2v_inst5/b2v_inst4/_n0115|         |    1.179|         |         |
+clk                       |    2.675|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b2v_inst17/b2v_inst12/buff
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+b2v_inst17/b2v_inst12/buff|    2.078|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b2v_inst5/b2v_inst4/_n0115
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+b2v_inst/b2v_inst3/buff|         |         |    7.631|         |
+clk                    |         |         |    5.964|         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+b2v_inst/b2v_inst3/buff|    5.441|         |         |         |
+clk                    |    3.774|         |         |         |
+-----------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 11.89 secs
+ 
+--> 
+
+
+Total memory usage is 483016 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   80 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

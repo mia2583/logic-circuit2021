@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/ise/PO/elevator.xst" -ofn "/home/ise/PO/elevator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc elevator.ucf -p xc6slx45-fgg484-3 elevator.ngc elevator.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc elevator.ucf -p xc6slx45-fgg484-3 elevator.ngc elevator.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o elevator_map.ncd elevator.ngd elevator.pcf 
+par -w -intstyle ise -ol high -mt off elevator_map.ncd elevator.ncd elevator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml elevator.twx elevator.ncd -o elevator.twr elevator.pcf -ucf elevator.ucf 
+bitgen -intstyle ise -f elevator.ut elevator.ncd 

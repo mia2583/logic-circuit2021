@@ -1,0 +1,46 @@
+|countHundred
+CNT100[0] <= bf_CNT100[0].DB_MAX_OUTPUT_PORT_TYPE
+CNT100[1] <= bf_CNT100[1].DB_MAX_OUTPUT_PORT_TYPE
+CNT100[2] <= bf_CNT100[2].DB_MAX_OUTPUT_PORT_TYPE
+CNT100[3] <= bf_CNT100[3].DB_MAX_OUTPUT_PORT_TYPE
+CNT100[4] <= bf_CNT100[4].DB_MAX_OUTPUT_PORT_TYPE
+CNT100[5] <= bf_CNT100[5].DB_MAX_OUTPUT_PORT_TYPE
+CNT100[6] <= bf_CNT100[6].DB_MAX_OUTPUT_PORT_TYPE
+CNT100[7] <= bf_CNT100[7].DB_MAX_OUTPUT_PORT_TYPE
+rst_n => inst4.ACLR
+rst_n => ten_counter:inst5.rst_n
+rst_n => ten_counter:inst.rst_n
+clk => inst4.CLK
+clk => ten_counter:inst.clk
+
+
+|countHundred|ten_counter:inst5
+CNT10[0] <= D_b.DB_MAX_OUTPUT_PORT_TYPE
+CNT10[1] <= C_b.DB_MAX_OUTPUT_PORT_TYPE
+CNT10[2] <= B_b.DB_MAX_OUTPUT_PORT_TYPE
+CNT10[3] <= A_b.DB_MAX_OUTPUT_PORT_TYPE
+rst_n => D_b.ACLR
+rst_n => C_b.ACLR
+rst_n => B_b.ACLR
+rst_n => A_b.ACLR
+clk => D_b.CLK
+clk => C_b.CLK
+clk => B_b.CLK
+clk => A_b.CLK
+
+
+|countHundred|ten_counter:inst
+CNT10[0] <= D_b.DB_MAX_OUTPUT_PORT_TYPE
+CNT10[1] <= C_b.DB_MAX_OUTPUT_PORT_TYPE
+CNT10[2] <= B_b.DB_MAX_OUTPUT_PORT_TYPE
+CNT10[3] <= A_b.DB_MAX_OUTPUT_PORT_TYPE
+rst_n => D_b.ACLR
+rst_n => C_b.ACLR
+rst_n => B_b.ACLR
+rst_n => A_b.ACLR
+clk => D_b.CLK
+clk => C_b.CLK
+clk => B_b.CLK
+clk => A_b.CLK
+
+

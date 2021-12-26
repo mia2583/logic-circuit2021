@@ -1,0 +1,110 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "09/29/2021 22:46:23"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          week4_6
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module week4_6_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Carry;
+reg Ce;
+reg CLK;
+reg Dec0;
+reg Dec1;
+reg Dec2;
+reg Dec3;
+reg Dec4;
+reg Dec5;
+reg Dec6;
+reg Dec7;
+reg Dec8;
+reg Dec9;
+reg Dec10;
+reg Dec11;
+reg RST;
+// wires                                               
+wire Sum0;
+wire Sum1;
+wire Sum2;
+wire Sum3;
+wire Sum4;
+
+// assign statements (if any)                          
+week4_6 i1 (
+// port map - connection between master ports and signals/registers   
+	.Carry(Carry),
+	.Ce(Ce),
+	.CLK(CLK),
+	.Dec0(Dec0),
+	.Dec1(Dec1),
+	.Dec2(Dec2),
+	.Dec3(Dec3),
+	.Dec4(Dec4),
+	.Dec5(Dec5),
+	.Dec6(Dec6),
+	.Dec7(Dec7),
+	.Dec8(Dec8),
+	.Dec9(Dec9),
+	.Dec10(Dec10),
+	.Dec11(Dec11),
+	.RST(RST),
+	.Sum0(Sum0),
+	.Sum1(Sum1),
+	.Sum2(Sum2),
+	.Sum3(Sum3),
+	.Sum4(Sum4)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// CLK
+always
+begin
+	CLK = 1'b0;
+	CLK = #10000 1'b1;
+	#10000;
+end 
+
+// Ce
+initial
+begin
+	Ce = 1'b0;
+	Ce = #260000 1'b1;
+	Ce = #240000 1'b0;
+	Ce = #160000 1'b1;
+	Ce = #140000 1'b0;
+end 
+
+// RST
+initial
+begin
+	RST = 1'b1;
+end 
+endmodule
+

@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, D:/hw/hw1.bdf
+source_file = 1, D:/hw/db/hw1.cbx.xml
+design_name = hw1
+instance = comp, \C~I , C, hw1, 1
+instance = comp, \B~I , B, hw1, 1
+instance = comp, \A~I , A, hw1, 1
+instance = comp, \D~I , D, hw1, 1
+instance = comp, \inst3~0 , inst3~0, hw1, 1
+instance = comp, \F1~I , F1, hw1, 1
+instance = comp, \F2~I , F2, hw1, 1

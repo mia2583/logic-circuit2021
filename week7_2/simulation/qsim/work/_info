@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/hw_quartus/week7_2/simulation/qsim
+vControlUnit
+Z1 !s110 1634130091
+!i10b 1
+!s100 beCa67bbSna@^RmYLERni1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IodAT83d8d]CfKhM_5<_Dn2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1634130089
+Z4 8ControlUnit.vo
+Z5 FControlUnit.vo
+!i122 22
+L0 32 576
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1634130091.000000
+Z8 !s107 ControlUnit.vo|
+Z9 !s90 -work|work|ControlUnit.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@control@unit
+vControlUnit_vlg_vec_tst
+R1
+!i10b 1
+!s100 ]Im@hSnRVzj=gV2d`09g:0
+R2
+I3OGLa34gF8<Z_SThE<QMP2
+R3
+R0
+w1634130087
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 23
+L0 30 90
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@control@unit_vlg_vec_tst
+vKeypad_control_unit
+Z12 !s110 1634128483
+!i10b 1
+!s100 ZaCCmkZNJKKjLAcoFTIzB2
+R2
+IXDSLUeO<jcX;;hUXY3=;f2
+R3
+R0
+w1634128481
+R4
+R5
+!i122 20
+L0 32 1808
+R6
+r1
+!s85 0
+31
+Z13 !s108 1634128483.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@keypad_control_unit
+vKeypad_control_unit_vlg_vec_tst
+R12
+!i10b 1
+!s100 d>?SP<:gRK^VBi0P29WjF3
+R2
+I7Jdo<WEHjK<K]YLzzXG<60
+R3
+R0
+w1634128479
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+!i122 21
+L0 30 118
+R6
+r1
+!s85 0
+31
+R13
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11
+n@keypad_control_unit_vlg_vec_tst

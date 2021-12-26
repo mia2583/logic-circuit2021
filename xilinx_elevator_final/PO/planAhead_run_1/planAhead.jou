@@ -1,0 +1,130 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Dec 23 04:43:51 2021
+# Process ID: 3011
+# Log file: /home/ise/PO/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/PO/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/ise/PO/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin K1 [get_ports {key[9]}]
+endgroup
+startgroup
+set_property package_pin K4 [get_ports {key[8]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {key[7]}]
+endgroup
+startgroup
+set_property package_pin M2 [get_ports {key[6]}]
+endgroup
+startgroup
+set_property package_pin N1 [get_ports {key[5]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports {key[4]}]
+endgroup
+startgroup
+set_property package_pin M1 [get_ports {key[3]}]
+endgroup
+startgroup
+set_property package_pin M3 [get_ports {key[2]}]
+endgroup
+startgroup
+set_property package_pin K2 [get_ports {key[1]}]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports {key[0]}]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports a]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports a]
+endgroup
+set_property package_pin "" [get_ports [list  arrived]]
+startgroup
+set_property package_pin P4 [get_ports b]
+endgroup
+startgroup
+set_property package_pin N7 [get_ports c]
+endgroup
+startgroup
+set_property package_pin N6 [get_ports d]
+endgroup
+startgroup
+set_property package_pin R4 [get_ports e]
+endgroup
+startgroup
+set_property package_pin P8 [get_ports f]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports g]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports green1]
+endgroup
+startgroup
+set_property package_pin V3 [get_ports green2]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports green3]
+endgroup
+startgroup
+set_property package_pin R1 [get_ports green4]
+endgroup
+startgroup
+set_property package_pin W17 [get_ports motor_a]
+endgroup
+startgroup
+set_property package_pin T16 [get_ports motor_aa]
+endgroup
+startgroup
+set_property package_pin Y17 [get_ports motor_b]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports motor_bb]
+endgroup
+startgroup
+set_property package_pin T2 [get_ports red1]
+endgroup
+startgroup
+set_property package_pin U1 [get_ports red2]
+endgroup
+startgroup
+set_property package_pin P3 [get_ports red3]
+endgroup
+startgroup
+set_property package_pin R3 [get_ports red4]
+endgroup
+startgroup
+set_property package_pin V1 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports sharp]
+endgroup
+startgroup
+set_property package_pin W15 [get_ports sound]
+endgroup
+startgroup
+set_property package_pin L4 [get_ports star]
+endgroup
+startgroup
+set_property package_pin K8 [get_ports arrived]
+endgroup
+startgroup
+set_property package_pin AB16 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin AB16 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports close]
+endgroup
+save_constraints

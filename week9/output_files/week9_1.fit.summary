@@ -1,0 +1,11 @@
+Fitter Status : Successful - Wed Dec 01 20:33:41 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : week9_1
+Top-level Entity Name : Decimal_to_binary
+Family : MAX V
+Device : 5M40ZE64C4
+Timing Models : Final
+Total logic elements : 6 / 40 ( 15 % )
+Total pins : 14 / 54 ( 26 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

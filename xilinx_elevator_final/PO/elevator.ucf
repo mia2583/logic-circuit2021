@@ -1,0 +1,41 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "key[9]" LOC = K1;
+NET "key[8]" LOC = K4;
+NET "key[7]" LOC = L3;
+NET "key[6]" LOC = M2;
+NET "key[5]" LOC = N1;
+NET "key[4]" LOC = N3;
+NET "key[3]" LOC = M1;
+NET "key[2]" LOC = M3;
+NET "key[1]" LOC = K2;
+NET "key[0]" LOC = L1;
+NET "a" LOC = P5;
+NET "b" LOC = P4;
+NET "c" LOC = N7;
+NET "d" LOC = N6;
+NET "e" LOC = R4;
+NET "f" LOC = P8;
+NET "g" LOC = P7;
+NET "green1" LOC = T1;
+NET "green2" LOC = V3;
+NET "green3" LOC = P2;
+NET "green4" LOC = R1;
+NET "motor_a" LOC = W17;
+NET "motor_aa" LOC = T16;
+NET "motor_b" LOC = Y17;
+NET "motor_bb" LOC = U16;
+NET "red1" LOC = T2;
+NET "red2" LOC = U1;
+NET "red3" LOC = P3;
+NET "red4" LOC = R3;
+NET "rst" LOC = V1;
+NET "sharp" LOC = K3;
+NET "sound" LOC = W15;
+NET "star" LOC = L4;
+NET "arrived" LOC = K8;
+NET "clk" LOC = AB16;
+NET "close" LOC = N4;
+NET"clk"IOSTANDARD=LVCMOS25;
+NET"clk"CLOCK_DEDICATED_ROUTE=FALSE;

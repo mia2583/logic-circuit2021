@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/hw_quartus/week6_2/simulation/qsim
+vsram
+Z1 !s110 1633700125
+!i10b 1
+!s100 <:=oU<EAJlBJo?QA?9YGT0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IGBNCkjo`PX64^HQBSYnL41
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1633700122
+8sram.vo
+Fsram.vo
+!i122 38
+L0 32 990
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1633700124.000000
+!s107 sram.vo|
+!s90 -work|work|sram.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vsram_vlg_vec_tst
+R1
+!i10b 1
+!s100 5>;dgz00oLBconFCHbma[0
+R2
+I9DJS8V<5_hK42Qj=XMiMQ1
+R3
+R0
+w1633700121
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 39
+L0 30 102
+R4
+r1
+!s85 0
+31
+!s108 1633700125.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

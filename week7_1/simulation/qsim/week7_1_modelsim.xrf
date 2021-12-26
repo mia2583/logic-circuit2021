@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, D:/hw_quartus/week7_1/week7_1.smf
+source_file = 1, D:/hw_quartus/week7_1/Waveform.vwf
+source_file = 1, Waveform1.vwf
+source_file = 1, D:/hw_quartus/week7_1/week7_1.v
+design_name = week7_1
+instance = comp, \rst_n~I , rst_n, week7_1, 1
+instance = comp, \clock~I , clock, week7_1, 1
+instance = comp, \Din~I , Din, week7_1, 1
+instance = comp, \fstate.state2 , fstate.state2, week7_1, 1
+instance = comp, \fstate.state3 , fstate.state3, week7_1, 1
+instance = comp, \Dout~1 , Dout~1, week7_1, 1
+instance = comp, \Dout~I , Dout, week7_1, 1

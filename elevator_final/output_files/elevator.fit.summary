@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Dec 23 00:08:49 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : elevator
+Top-level Entity Name : elevator_simul
+Family : MAX V
+Device : 5M160ZT100C4
+Timing Models : Final
+Total logic elements : 83 / 160 ( 52 % )
+Total pins : 38 / 79 ( 48 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

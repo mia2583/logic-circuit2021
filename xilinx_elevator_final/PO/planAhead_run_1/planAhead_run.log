@@ -1,0 +1,241 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -1698 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/ise/PO/pa.fromHdl.tcl
+# create_project -name PO -dir "/home/ise/PO/planAhead_run_1" -part xc6slx45fgg484-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "elevator.ucf" [current_fileset -constrset]
+Adding file '/home/ise/PO/elevator.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {../xilinx_project/mx_2x1.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/fourSecond.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/countFour.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/trigger.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/timer.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/stop.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/mx_4bit_2x1.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/four_bit_reg_ce.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/FA.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/Decimal_to_binary.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/count_4.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/clk_div.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/sub.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/sound.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/moving.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/motorMove.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/Led.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/keypad.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/canMove2.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/b2seg_bus.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../xilinx_project/elevator.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top elevator $srcset
+# add_files [list {elevator.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx45fgg484-3
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "/home/ise/xilinx_project/mx_2x1.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/fourSecond.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/countFour.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/trigger.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/timer.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/stop.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/mx_4bit_2x1.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/four_bit_reg_ce.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/FA.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/Decimal_to_binary.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/count_4.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/clk_div.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/sub.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/sound.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/moving.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/motorMove.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/Led.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/keypad.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/canMove2.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/b2seg_bus.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/elevator.v" into library work
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/fgg484/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/ise/PO/elevator.ucf]
+Finished Parsing UCF File [/home/ise/PO/elevator.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: f412fff9
+open_rtl_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2770.824 ; gain = 138.793
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin K1 [get_ports {key[9]}]
+endgroup
+startgroup
+set_property package_pin K4 [get_ports {key[8]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {key[7]}]
+endgroup
+startgroup
+set_property package_pin M2 [get_ports {key[6]}]
+endgroup
+startgroup
+set_property package_pin N1 [get_ports {key[5]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports {key[4]}]
+endgroup
+startgroup
+set_property package_pin M1 [get_ports {key[3]}]
+endgroup
+startgroup
+set_property package_pin M3 [get_ports {key[2]}]
+endgroup
+startgroup
+set_property package_pin K2 [get_ports {key[1]}]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports {key[0]}]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports a]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports a]
+endgroup
+set_property package_pin "" [get_ports [list  arrived]]
+startgroup
+set_property package_pin P4 [get_ports b]
+endgroup
+startgroup
+set_property package_pin N7 [get_ports c]
+endgroup
+startgroup
+set_property package_pin N6 [get_ports d]
+endgroup
+startgroup
+set_property package_pin R4 [get_ports e]
+endgroup
+startgroup
+set_property package_pin P8 [get_ports f]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports g]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports green1]
+endgroup
+startgroup
+set_property package_pin V3 [get_ports green2]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports green3]
+endgroup
+startgroup
+set_property package_pin R1 [get_ports green4]
+endgroup
+startgroup
+set_property package_pin W17 [get_ports motor_a]
+endgroup
+startgroup
+set_property package_pin T16 [get_ports motor_aa]
+endgroup
+startgroup
+set_property package_pin Y17 [get_ports motor_b]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports motor_bb]
+endgroup
+startgroup
+set_property package_pin T2 [get_ports red1]
+endgroup
+startgroup
+set_property package_pin U1 [get_ports red2]
+endgroup
+startgroup
+set_property package_pin P3 [get_ports red3]
+endgroup
+startgroup
+set_property package_pin R3 [get_ports red4]
+endgroup
+startgroup
+set_property package_pin V1 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports sharp]
+endgroup
+startgroup
+set_property package_pin W15 [get_ports sound]
+endgroup
+startgroup
+set_property package_pin L4 [get_ports star]
+endgroup
+startgroup
+set_property package_pin K8 [get_ports arrived]
+endgroup
+startgroup
+set_property package_pin AB16 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin AB16 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports close]
+endgroup
+save_constraints

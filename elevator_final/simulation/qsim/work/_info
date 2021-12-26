@@ -1,0 +1,385 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/hw_quartus/elevator/elevator/simulation/qsim
+vb2seg_bus
+Z1 !s110 1640184743
+!i10b 1
+!s100 MdJ[V:36]UXL[G<?GC`3g2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IzUoe`KH6a@1T@==AlQDe@2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 dD:/hw_quartus/elevator (2)/simulation/qsim
+w1640184740
+Z5 8elevator.vo
+Z6 Felevator.vo
+!i122 78
+L0 32 405
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1640184743.000000
+Z9 !s107 elevator.vo|
+Z10 !s90 -work|work|elevator.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vb2seg_bus_vlg_vec_tst
+R1
+!i10b 1
+!s100 WO1_EFbAdXkiSLZEiGk`z1
+R2
+I>KQlN0L_`=o>Ra6]0R=5A0
+R3
+R4
+w1640184738
+8Waveform21.vwf.vt
+FWaveform21.vwf.vt
+!i122 79
+L0 30 66
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform21.vwf.vt|
+!s90 -work|work|Waveform21.vwf.vt|
+!i113 1
+R11
+R12
+vcanMove
+Z13 !s110 1640090383
+!i10b 1
+!s100 Cn:kV70i6e4dJc<Ak7EM<3
+R2
+IKNREmk?Yj@D]1]nKCA[DK2
+R3
+R0
+w1640090380
+R5
+R6
+!i122 42
+L0 32 537
+R7
+r1
+!s85 0
+31
+!s108 1640090382.000000
+R9
+R10
+!i113 1
+R11
+R12
+ncan@move
+vcanMove2
+Z14 !s110 1640091685
+!i10b 1
+!s100 e56Q4Ohg0H0cZ<<Ek2Dhl3
+R2
+INi;>NS:mS1dJdi>n<:kE<3
+R3
+R0
+w1640091683
+R5
+R6
+!i122 44
+L0 32 351
+R7
+r1
+!s85 0
+31
+Z15 !s108 1640091685.000000
+R9
+R10
+!i113 1
+R11
+R12
+ncan@move2
+vcanMove2_vlg_vec_tst
+R14
+!i10b 1
+!s100 fgdQofPkCk>nFSb^e3dHW2
+R2
+I]eR]G`a^LXJLjzPSQ]>HI1
+R3
+R0
+w1640091681
+8Waveform12.vwf.vt
+FWaveform12.vwf.vt
+!i122 45
+Z16 L0 30 68
+R7
+r1
+!s85 0
+31
+R15
+!s107 Waveform12.vwf.vt|
+!s90 -work|work|Waveform12.vwf.vt|
+!i113 1
+R11
+R12
+ncan@move2_vlg_vec_tst
+vcanMove_vlg_vec_tst
+R13
+!i10b 1
+!s100 K]IQ3T>`Z1ZBM53ZI2V_k2
+R2
+ITQ7]1nC7SYM@=[CBZ@n[h0
+R3
+R0
+w1640090379
+8Waveform11.vwf.vt
+FWaveform11.vwf.vt
+!i122 43
+R16
+R7
+r1
+!s85 0
+31
+!s108 1640090383.000000
+!s107 Waveform11.vwf.vt|
+!s90 -work|work|Waveform11.vwf.vt|
+!i113 1
+R11
+R12
+ncan@move_vlg_vec_tst
+velevator
+Z17 !s110 1640094370
+!i10b 1
+!s100 DWDfoE?<U2hUA6PVY4m7Q2
+R2
+I?>;Djc>iYULG]FDL1Zozh0
+R3
+R0
+w1640094368
+R5
+R6
+!i122 68
+L0 32 2841
+R7
+r1
+!s85 0
+31
+Z18 !s108 1640094370.000000
+R9
+R10
+!i113 1
+R11
+R12
+velevator_simul
+Z19 !s110 1640186063
+!i10b 1
+!s100 07o`:EL7ITjPk;FjRC=HY1
+R2
+IfOhE?bE6Z=CWHfFn?04QE2
+R3
+R4
+w1640186061
+R5
+R6
+!i122 84
+L0 32 3557
+R7
+r1
+!s85 0
+31
+Z20 !s108 1640186063.000000
+R9
+R10
+!i113 1
+R11
+R12
+velevator_simul_vlg_vec_tst
+R19
+!i10b 1
+!s100 0Dm5oi6EB2HQH4nN2O7GP2
+R2
+I@9MC?Y`HAoP5knmWnP_`L3
+R3
+R4
+w1640186059
+8Waveform22.vwf.vt
+FWaveform22.vwf.vt
+!i122 85
+L0 30 154
+R7
+r1
+!s85 0
+31
+R20
+!s107 Waveform22.vwf.vt|
+!s90 -work|work|Waveform22.vwf.vt|
+!i113 1
+R11
+R12
+velevator_vlg_vec_tst
+R17
+!i10b 1
+!s100 8BWnbEAmTgBUKQ_[W>Jo<2
+R2
+I5gQOVb0>@R9fY?DXcle3F1
+R3
+R0
+w1640094366
+8Waveform17.vwf.vt
+FWaveform17.vwf.vt
+!i122 69
+L0 30 132
+R7
+r1
+!s85 0
+31
+R18
+!s107 Waveform17.vwf.vt|
+!s90 -work|work|Waveform17.vwf.vt|
+!i113 1
+R11
+R12
+vmotorMove
+Z21 !s110 1640156362
+!i10b 1
+!s100 EBf`BhW_0m`Un>B@[B;ZS0
+R2
+IhRMh:b8UU?<Zho]DNaIBN1
+R3
+Z22 dC:/Users/user/Downloads/elevator/simulation/qsim
+w1640156361
+R5
+R6
+!i122 72
+L0 32 341
+R7
+r1
+!s85 0
+31
+Z23 !s108 1640156362.000000
+R9
+R10
+!i113 1
+R11
+R12
+nmotor@move
+vmotorMove_vlg_vec_tst
+R21
+!i10b 1
+!s100 aN3O_zWYTAD91UG_X4O6^2
+R2
+IGAlF;k3d5C2P<>=K4C^na1
+R3
+R22
+w1640156360
+8Waveform19.vwf.vt
+FWaveform19.vwf.vt
+!i122 73
+L0 30 59
+R7
+r1
+!s85 0
+31
+R23
+!s107 Waveform19.vwf.vt|
+!s90 -work|work|Waveform19.vwf.vt|
+!i113 1
+R11
+R12
+nmotor@move_vlg_vec_tst
+vmoving
+Z24 !s110 1640156689
+!i10b 1
+!s100 Kd>TC=e^3oMjVIQnJ^58X1
+R2
+I[9VUl:b@Jizf6`;6FBJ1^1
+R3
+R22
+w1640156688
+R5
+R6
+!i122 76
+L0 32 1001
+R7
+r1
+!s85 0
+31
+Z25 !s108 1640156689.000000
+R9
+R10
+!i113 1
+R11
+R12
+vmoving_vlg_vec_tst
+R24
+!i10b 1
+!s100 zU6I2RT;UH5Ng7_Z9992U2
+R2
+Il=ooV5zBXDd[cdjg0L5>e1
+R3
+R22
+w1640156687
+8Waveform20.vwf.vt
+FWaveform20.vwf.vt
+!i122 77
+L0 30 54
+R7
+r1
+!s85 0
+31
+R25
+!s107 Waveform20.vwf.vt|
+!s90 -work|work|Waveform20.vwf.vt|
+!i113 1
+R11
+R12
+vweek9_2
+!s110 1640086276
+!i10b 1
+!s100 81lMiVBn?0gJTIJS]]anc0
+R2
+ImA1JIDznLL[Jm3Dn=C8^31
+R3
+R0
+w1640086274
+R5
+R6
+!i122 30
+L0 32 1016
+R7
+r1
+!s85 0
+31
+!s108 1640086276.000000
+R9
+R10
+!i113 1
+R11
+R12
+vweek9_2_vlg_vec_tst
+!s110 1640086277
+!i10b 1
+!s100 _7dV=n7_SSK=i]UPoTlTG3
+R2
+I1YRU:0gGLk^IHG4Mz1<P:0
+R3
+R0
+w1640086273
+8Waveform6.vwf.vt
+FWaveform6.vwf.vt
+!i122 31
+L0 30 94
+R7
+r1
+!s85 0
+31
+!s108 1640086277.000000
+!s107 Waveform6.vwf.vt|
+!s90 -work|work|Waveform6.vwf.vt|
+!i113 1
+R11
+R12

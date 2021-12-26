@@ -1,0 +1,45 @@
+//! **************************************************************************
+// Written by: Map P.20160913 on Thu Dec 23 04:50:42 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "e" LOCATE = SITE "R4" LEVEL 1;
+COMP "f" LOCATE = SITE "P8" LEVEL 1;
+COMP "g" LOCATE = SITE "P7" LEVEL 1;
+COMP "clk" LOCATE = SITE "AB16" LEVEL 1;
+PIN clk_pin<0> = BEL "clk" PINNAME PAD;
+PIN "clk_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "green1" LOCATE = SITE "T1" LEVEL 1;
+COMP "green2" LOCATE = SITE "V3" LEVEL 1;
+COMP "green3" LOCATE = SITE "P2" LEVEL 1;
+COMP "green4" LOCATE = SITE "R1" LEVEL 1;
+COMP "key<0>" LOCATE = SITE "L1" LEVEL 1;
+COMP "key<1>" LOCATE = SITE "K2" LEVEL 1;
+COMP "key<2>" LOCATE = SITE "M3" LEVEL 1;
+COMP "motor_aa" LOCATE = SITE "T16" LEVEL 1;
+COMP "key<3>" LOCATE = SITE "M1" LEVEL 1;
+COMP "red1" LOCATE = SITE "T2" LEVEL 1;
+COMP "red2" LOCATE = SITE "U1" LEVEL 1;
+COMP "key<4>" LOCATE = SITE "N3" LEVEL 1;
+COMP "motor_bb" LOCATE = SITE "U16" LEVEL 1;
+COMP "red3" LOCATE = SITE "P3" LEVEL 1;
+COMP "red4" LOCATE = SITE "R3" LEVEL 1;
+COMP "key<5>" LOCATE = SITE "N1" LEVEL 1;
+COMP "key<6>" LOCATE = SITE "M2" LEVEL 1;
+COMP "key<7>" LOCATE = SITE "L3" LEVEL 1;
+COMP "key<8>" LOCATE = SITE "K4" LEVEL 1;
+COMP "key<9>" LOCATE = SITE "K1" LEVEL 1;
+COMP "arrived" LOCATE = SITE "K8" LEVEL 1;
+COMP "sharp" LOCATE = SITE "K3" LEVEL 1;
+COMP "star" LOCATE = SITE "L4" LEVEL 1;
+COMP "motor_a" LOCATE = SITE "W17" LEVEL 1;
+COMP "motor_b" LOCATE = SITE "Y17" LEVEL 1;
+COMP "sound" LOCATE = SITE "W15" LEVEL 1;
+COMP "close" LOCATE = SITE "N4" LEVEL 1;
+COMP "rst" LOCATE = SITE "V1" LEVEL 1;
+COMP "a" LOCATE = SITE "P5" LEVEL 1;
+COMP "b" LOCATE = SITE "P4" LEVEL 1;
+COMP "c" LOCATE = SITE "N7" LEVEL 1;
+COMP "d" LOCATE = SITE "N6" LEVEL 1;
+SCHEMATIC END;
+

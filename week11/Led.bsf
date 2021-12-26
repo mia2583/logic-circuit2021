@@ -1,0 +1,93 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 128 208)
+	(text "Led" (rect 5 0 20 9)(font "Lucida Sans" (font_size 6)(bold)))
+	(text "inst" (rect 8 171 24 188)(font "Intel Clear" (font_size 6)))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Correct" (rect 0 0 31 17)(font "Intel Clear" (font_size 6)))
+		(text "Correct" (rect 21 27 52 44)(font "Intel Clear" (font_size 6)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 112 32)
+		(output)
+		(text "Green1" (rect 0 0 30 17)(font "Intel Clear" (font_size 6)))
+		(text "Green1" (rect 61 27 91 44)(font "Intel Clear" (font_size 6)))
+		(line (pt 112 32)(pt 96 32))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "Green2" (rect 0 0 30 17)(font "Intel Clear" (font_size 6)))
+		(text "Green2" (rect 61 43 91 60)(font "Intel Clear" (font_size 6)))
+		(line (pt 112 48)(pt 96 48))
+	)
+	(port
+		(pt 112 64)
+		(output)
+		(text "Green3" (rect 0 0 30 17)(font "Intel Clear" (font_size 6)))
+		(text "Green3" (rect 61 59 91 76)(font "Intel Clear" (font_size 6)))
+		(line (pt 112 64)(pt 96 64))
+	)
+	(port
+		(pt 112 80)
+		(output)
+		(text "Green4" (rect 0 0 30 17)(font "Intel Clear" (font_size 6)))
+		(text "Green4" (rect 61 75 91 92)(font "Intel Clear" (font_size 6)))
+		(line (pt 112 80)(pt 96 80))
+	)
+	(port
+		(pt 112 96)
+		(output)
+		(text "Red1" (rect 0 0 22 17)(font "Intel Clear" (font_size 6)))
+		(text "Red1" (rect 69 91 91 108)(font "Intel Clear" (font_size 6)))
+		(line (pt 112 96)(pt 96 96))
+	)
+	(port
+		(pt 112 112)
+		(output)
+		(text "Red2" (rect 0 0 22 17)(font "Intel Clear" (font_size 6)))
+		(text "Red2" (rect 69 107 91 124)(font "Intel Clear" (font_size 6)))
+		(line (pt 112 112)(pt 96 112))
+	)
+	(port
+		(pt 112 128)
+		(output)
+		(text "Red3" (rect 0 0 22 17)(font "Intel Clear" (font_size 6)))
+		(text "Red3" (rect 69 123 91 140)(font "Intel Clear" (font_size 6)))
+		(line (pt 112 128)(pt 96 128))
+	)
+	(port
+		(pt 112 144)
+		(output)
+		(text "Red4" (rect 0 0 22 17)(font "Intel Clear" (font_size 6)))
+		(text "Red4" (rect 69 139 91 156)(font "Intel Clear" (font_size 6)))
+		(line (pt 112 144)(pt 96 144))
+	)
+	(drawing
+		(rectangle (rect 16 16 96 176))
+	)
+)

@@ -1,0 +1,7 @@
+|week4_1_dff
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST_N => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+
+

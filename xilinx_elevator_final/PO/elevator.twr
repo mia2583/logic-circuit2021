@@ -1,0 +1,122 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml elevator.twx elevator.ncd -o elevator.twr elevator.pcf -ucf
+elevator.ucf
+
+Design file:              elevator.ncd
+Physical constraint file: elevator.pcf
+Device,package,speed:     xc6slx45,fgg484,C,-3 (PRODUCTION 1.23 2016-11-22)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+key<0>      |   -1.110(R)|      FAST  |    5.004(R)|      SLOW  |clk_BUFGP         |   0.000|
+key<1>      |   -2.179(R)|      FAST  |    4.484(R)|      SLOW  |clk_BUFGP         |   0.000|
+key<2>      |   -2.044(R)|      FAST  |    4.334(R)|      SLOW  |clk_BUFGP         |   0.000|
+key<3>      |   -2.219(R)|      FAST  |    4.648(R)|      SLOW  |clk_BUFGP         |   0.000|
+key<4>      |   -2.066(R)|      FAST  |    4.663(R)|      SLOW  |clk_BUFGP         |   0.000|
+key<5>      |   -1.262(R)|      FAST  |    4.710(R)|      SLOW  |clk_BUFGP         |   0.000|
+key<6>      |   -1.598(R)|      FAST  |    4.549(R)|      SLOW  |clk_BUFGP         |   0.000|
+key<7>      |   -1.406(R)|      FAST  |    4.977(R)|      SLOW  |clk_BUFGP         |   0.000|
+key<8>      |   -2.083(R)|      FAST  |    4.422(R)|      SLOW  |clk_BUFGP         |   0.000|
+key<9>      |   -2.166(R)|      FAST  |    4.653(R)|      SLOW  |clk_BUFGP         |   0.000|
+rst         |   -0.257(R)|      FAST  |    4.756(R)|      SLOW  |clk_BUFGP         |   0.000|
+sharp       |   -2.338(R)|      FAST  |    4.704(R)|      SLOW  |clk_BUFGP         |   0.000|
+star        |    0.120(R)|      FAST  |    1.313(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+arrived     |        16.181(R)|      SLOW  |         8.552(R)|      FAST  |clk_BUFGP         |   0.000|
+close       |        13.698(R)|      SLOW  |         7.424(R)|      FAST  |clk_BUFGP         |   0.000|
+green1      |        15.220(R)|      SLOW  |         7.833(R)|      FAST  |clk_BUFGP         |   0.000|
+green2      |        16.480(R)|      SLOW  |         8.579(R)|      FAST  |clk_BUFGP         |   0.000|
+green3      |        16.057(R)|      SLOW  |         8.338(R)|      FAST  |clk_BUFGP         |   0.000|
+green4      |        15.575(R)|      SLOW  |         8.048(R)|      FAST  |clk_BUFGP         |   0.000|
+motor_a     |        19.396(R)|      SLOW  |         9.122(R)|      FAST  |clk_BUFGP         |   0.000|
+motor_aa    |        19.697(R)|      SLOW  |         9.464(R)|      FAST  |clk_BUFGP         |   0.000|
+motor_b     |        19.370(R)|      SLOW  |         9.257(R)|      FAST  |clk_BUFGP         |   0.000|
+motor_bb    |        19.879(R)|      SLOW  |         9.477(R)|      FAST  |clk_BUFGP         |   0.000|
+red1        |        15.445(R)|      SLOW  |         8.103(R)|      FAST  |clk_BUFGP         |   0.000|
+red2        |        15.063(R)|      SLOW  |         7.873(R)|      FAST  |clk_BUFGP         |   0.000|
+red3        |        14.521(R)|      SLOW  |         7.535(R)|      FAST  |clk_BUFGP         |   0.000|
+red4        |        15.766(R)|      SLOW  |         8.296(R)|      FAST  |clk_BUFGP         |   0.000|
+sound       |        15.668(R)|      SLOW  |         9.112(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.073|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+rst            |a              |    9.641|
+rst            |b              |    7.574|
+rst            |c              |    7.550|
+rst            |d              |    9.594|
+rst            |e              |    6.730|
+rst            |f              |    9.957|
+rst            |g              |    9.992|
+rst            |green1         |   10.311|
+rst            |green2         |   11.571|
+rst            |green3         |   11.148|
+rst            |green4         |   10.666|
+rst            |motor_a        |   14.487|
+rst            |motor_aa       |   14.788|
+rst            |motor_b        |   14.461|
+rst            |motor_bb       |   14.970|
+rst            |red1           |   10.536|
+rst            |red2           |   10.154|
+rst            |red3           |    9.612|
+rst            |red4           |   10.857|
+star           |close          |    9.303|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 23 04:51:25 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 438 MB
+
+
+

@@ -1,0 +1,323 @@
+$comment
+	File created using the following command:
+		vcd file countHundred.msim.vcd -direction
+$end
+$date
+	Wed Oct 06 23:15:41 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module countHundred_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " rst_n $end
+$var wire 1 # CNT100 [7] $end
+$var wire 1 $ CNT100 [6] $end
+$var wire 1 % CNT100 [5] $end
+$var wire 1 & CNT100 [4] $end
+$var wire 1 ' CNT100 [3] $end
+$var wire 1 ( CNT100 [2] $end
+$var wire 1 ) CNT100 [1] $end
+$var wire 1 * CNT100 [0] $end
+
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 clk~combout $end
+$var wire 1 2 rst_n~combout $end
+$var wire 1 3 inst|D_b~regout $end
+$var wire 1 4 inst|C_b~regout $end
+$var wire 1 5 inst|B_b~regout $end
+$var wire 1 6 inst|A_b~regout $end
+$var wire 1 7 inst4~regout $end
+$var wire 1 8 inst5|D_b~regout $end
+$var wire 1 9 inst5|C_b~regout $end
+$var wire 1 : inst5|B_b~regout $end
+$var wire 1 ; inst5|A_b~regout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0+
+1,
+x-
+1.
+1/
+10
+01
+12
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+$end
+#20000
+1!
+11
+13
+1*
+#40000
+0!
+01
+#60000
+1!
+11
+14
+03
+1)
+0*
+#80000
+0!
+01
+#100000
+1!
+11
+13
+1*
+#120000
+0!
+01
+#140000
+1!
+11
+15
+04
+03
+1(
+0)
+0*
+#160000
+0!
+01
+#180000
+1!
+11
+13
+1*
+#200000
+0!
+01
+#220000
+1!
+11
+14
+03
+1)
+0*
+#240000
+0!
+01
+#260000
+1!
+11
+13
+1*
+#280000
+0!
+01
+#300000
+1!
+11
+16
+05
+04
+03
+1'
+0(
+0)
+0*
+#320000
+0!
+01
+#340000
+1!
+11
+13
+1*
+#360000
+0!
+01
+#380000
+1!
+11
+17
+06
+03
+0'
+0*
+18
+1&
+#400000
+0!
+01
+#420000
+1!
+11
+07
+13
+1*
+#440000
+0!
+01
+#460000
+1!
+11
+14
+03
+1)
+0*
+#480000
+0!
+01
+#500000
+1!
+11
+13
+1*
+#520000
+0!
+01
+#540000
+1!
+11
+15
+04
+03
+1(
+0)
+0*
+#560000
+0!
+01
+#580000
+1!
+11
+13
+1*
+#600000
+0!
+01
+#620000
+1!
+11
+14
+03
+1)
+0*
+#640000
+0!
+01
+#660000
+1!
+11
+13
+1*
+#680000
+0!
+01
+#700000
+1!
+11
+16
+05
+04
+03
+1'
+0(
+0)
+0*
+#720000
+0!
+01
+#740000
+1!
+11
+13
+1*
+#760000
+0!
+01
+#780000
+1!
+11
+17
+06
+03
+0'
+0*
+19
+08
+1%
+0&
+#800000
+0!
+01
+#820000
+1!
+11
+07
+13
+1*
+#840000
+0!
+01
+#860000
+1!
+11
+14
+03
+1)
+0*
+#880000
+0!
+01
+#900000
+1!
+11
+13
+1*
+#920000
+0!
+01
+#940000
+1!
+11
+15
+04
+03
+1(
+0)
+0*
+#960000
+0!
+01
+#980000
+1!
+11
+13
+1*
+#1000000

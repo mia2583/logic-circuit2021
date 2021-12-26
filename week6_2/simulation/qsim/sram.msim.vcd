@@ -1,0 +1,399 @@
+$comment
+	File created using the following command:
+		vcd file sram.msim.vcd -direction
+$end
+$date
+	Fri Oct 08 22:35:26 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module sram_vlg_vec_tst $end
+$var reg 2 ! Addr [1:0] $end
+$var reg 1 " clk $end
+$var reg 4 # DataIn [3:0] $end
+$var reg 1 $ rst_n $end
+$var reg 1 % RW $end
+$var wire 1 & DataOut [3] $end
+$var wire 1 ' DataOut [2] $end
+$var wire 1 ( DataOut [1] $end
+$var wire 1 ) DataOut [0] $end
+
+$scope module i1 $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 inst1|inst3~regout $end
+$var wire 1 1 inst2|inst3~regout $end
+$var wire 1 2 inst2|inst2~regout $end
+$var wire 1 3 inst1|inst2~regout $end
+$var wire 1 4 inst1|inst1~regout $end
+$var wire 1 5 inst2|inst1~regout $end
+$var wire 1 6 inst2|inst~regout $end
+$var wire 1 7 inst1|inst~regout $end
+$var wire 1 8 clk~combout $end
+$var wire 1 9 RW~combout $end
+$var wire 1 : inst19~combout $end
+$var wire 1 ; inst18~combout $end
+$var wire 1 < rst_n~combout $end
+$var wire 1 = inst32~combout $end
+$var wire 1 > inst|inst3~regout $end
+$var wire 1 ? inst26~1_combout $end
+$var wire 1 @ inst15|$00000|auto_generated|result_node[3]~0 $end
+$var wire 1 A inst26~2_combout $end
+$var wire 1 B inst3|inst3~regout $end
+$var wire 1 C inst26~0_combout $end
+$var wire 1 D inst15|$00000|auto_generated|result_node[3]~1 $end
+$var wire 1 E inst3|inst2~regout $end
+$var wire 1 F inst|inst2~regout $end
+$var wire 1 G inst15|$00000|auto_generated|result_node[2]~2 $end
+$var wire 1 H inst15|$00000|auto_generated|result_node[2]~3 $end
+$var wire 1 I inst3|inst1~regout $end
+$var wire 1 J inst|inst1~regout $end
+$var wire 1 K inst15|$00000|auto_generated|result_node[1]~4 $end
+$var wire 1 L inst15|$00000|auto_generated|result_node[1]~5 $end
+$var wire 1 M inst|inst~regout $end
+$var wire 1 N inst15|$00000|auto_generated|result_node[0]~6 $end
+$var wire 1 O inst3|inst~regout $end
+$var wire 1 P inst15|$00000|auto_generated|result_node[0]~7 $end
+$var wire 1 Q Addr~combout [1] $end
+$var wire 1 R Addr~combout [0] $end
+$var wire 1 S DataIn~combout [3] $end
+$var wire 1 T DataIn~combout [2] $end
+$var wire 1 U DataIn~combout [1] $end
+$var wire 1 V DataIn~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0"
+b0 #
+1$
+0%
+0)
+0(
+0'
+0&
+0*
+1+
+x,
+1-
+1.
+1/
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+1<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0R
+0Q
+0V
+0U
+0T
+0S
+$end
+#20000
+1"
+18
+#40000
+0"
+08
+#60000
+1"
+18
+#80000
+0"
+08
+#100000
+1"
+18
+#120000
+1%
+b10 !
+b11 !
+b1000 #
+b1001 #
+0"
+19
+1V
+1S
+1R
+1Q
+08
+1A
+#140000
+1"
+18
+1O
+1B
+#160000
+0%
+b1 !
+b0 !
+b1 #
+b0 #
+0"
+09
+0V
+0S
+0R
+0Q
+08
+0A
+#180000
+1"
+18
+#200000
+0"
+08
+#220000
+1"
+18
+#240000
+b10 !
+b11 !
+0"
+1R
+1Q
+08
+1;
+1:
+1N
+1K
+1G
+1@
+1P
+1D
+1)
+1&
+#260000
+1"
+18
+#280000
+b1 !
+b0 !
+0"
+0R
+0Q
+08
+0;
+0:
+0N
+0K
+1H
+0G
+0@
+1L
+0P
+0L
+0H
+0D
+1'
+1(
+0)
+0(
+0'
+0&
+#300000
+1"
+18
+#320000
+0"
+08
+#340000
+1"
+18
+#360000
+b100 #
+b110 #
+1%
+b1 !
+0"
+19
+1R
+1U
+1T
+08
+1?
+#380000
+1"
+18
+14
+13
+#400000
+b10 #
+b0 #
+0%
+b0 !
+0"
+09
+0R
+0U
+0T
+08
+0?
+#420000
+1"
+18
+#440000
+0"
+08
+#460000
+1"
+18
+#480000
+0"
+08
+#500000
+1"
+18
+#520000
+0"
+08
+#540000
+b10 !
+b11 !
+1"
+1R
+1Q
+18
+1;
+1:
+1N
+1K
+1H
+1G
+1@
+1P
+0H
+1D
+1'
+1)
+0'
+1&
+#560000
+0"
+08
+#580000
+1"
+18
+#600000
+0"
+08
+#620000
+b1 !
+b0 !
+1"
+0R
+0Q
+18
+0;
+0:
+0N
+0K
+1H
+0G
+0@
+1L
+0P
+0L
+0H
+0D
+1'
+1(
+0)
+0(
+0'
+0&
+#640000
+0"
+08
+#660000
+1"
+18
+#680000
+0"
+08
+#700000
+1"
+18
+#720000
+0"
+08
+#740000
+1"
+18
+#760000
+0"
+08
+#780000
+1"
+18
+#800000
+0"
+08
+#820000
+1"
+18
+#840000
+0"
+08
+#860000
+1"
+18
+#880000
+0"
+08
+#900000
+1"
+18
+#920000
+0"
+08
+#940000
+1"
+18
+#960000
+0"
+08
+#980000
+1"
+18
+#1000000
